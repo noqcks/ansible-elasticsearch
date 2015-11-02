@@ -1,7 +1,20 @@
 ---
-- name: Reload Service | elasticsearch
+- name: service | elasticsearch | started
   service:
-    state: reloaded
     name: elasticsearch
-  tags:
-    - disruptive
+    state: started
+
+- name: service | elasticsearch | stopped
+  service:
+    name: elasticsearch
+    state: stopped
+
+- name: service | elasticsearch | restarted
+  service:
+    name: elasticsearch
+    state: restarted
+
+- name: service | elasticsearch | reloaded
+  service:
+    name: elasticsearch
+    state: reloaded
