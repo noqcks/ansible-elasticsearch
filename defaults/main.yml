@@ -17,3 +17,6 @@ elasticsearch_http_basic_log: true
 elasticsearch_cloud_aws_access_key: ''
 elasticsearch_cloud_aws_secret_key: ''
 elasticsearch_cloud_aws_region: us-east-1
+
+elasticsearch_plugins: []
+# - { name: '<plugin name>', url: '<[optional] plugin url>' }
